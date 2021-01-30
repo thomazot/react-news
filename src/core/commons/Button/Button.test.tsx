@@ -12,8 +12,8 @@ import Theme from "styles/Theme";
 
 describe("<Button /> @libs/commons/button", () => {
   it("Should render component", () => {
-    createComponent();
-    expect(true).toBe(true);
+    const { container } = createComponent();
+    expect(container).toBeInTheDocument();
   });
   it("Should data-color to be primary", () => {
     createComponent("confirm");
