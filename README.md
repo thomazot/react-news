@@ -1,4 +1,4 @@
-# React Acordion
+# React News
 
 ![CI/CD](https://github.com/dyarleniber/react-workflow-gh-actions/workflows/CI/CD/badge.svg)
 [![codecov](https://codecov.io/gh/thomazot/react-news/branch/master/graph/badge.svg)](https://codecov.io/gh/thomazot/react-news)
