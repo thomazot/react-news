@@ -47,6 +47,11 @@ describe("<Button /> @libs/commons/button", () => {
     expect(button).toHaveStyle({
       backgroundColor: Theme.brand.Color.primary[1],
     });
+    userEvent.unhover(button);
+    expect(button.getAttribute("aria-pressed")).toBe("false");
+    expect(button).toHaveStyle({
+      backgroundColor: Theme.brand.Color.primary[2],
+    });
   });
 });
 

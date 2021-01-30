@@ -1,6 +1,7 @@
 {
   "name": "react-news",
   "version": "0.1.0",
+  "homepage": "https://thomazot.github.io/react-news",
   "private": true,
   "jest": {
     "collectCoverageFrom": [
@@ -22,6 +23,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -58,11 +61,6 @@
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.7",
     "eslint": "^7.18.0",
-    "js-yaml": "^4.0.0",
-    "ts-jest": "^26.5.0",
     "user-event": "^4.0.0"
-  },
-  "_moduleAliases": {
-    "@tokens": "dist/tokens"
   }
 }

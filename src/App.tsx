@@ -3,12 +3,12 @@ import { ThemeProvider } from "styled-components";
 import Theme from "styles/Theme";
 import Button from "./core/commons/Button";
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={Theme}>
-      <Button>teste</Button>
+      <Button>Teste</Button>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
