@@ -6,20 +6,19 @@
   "jest": {
     "collectCoverageFrom": [
       "!src/**/index.{ts,tsx}",
+      "!src/**/*.{style,styl}.{ts,tsx}",
+      "!src/styles/**/*",
+      "!src/typings/**/*",
+      "!src/tokens/**/*",
       "!src/react-app-env.d.ts"
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
@@ -31,8 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "coverage": "yarn test --coverage --watchAll=false",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +52,16 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.6.2",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.7",
     "eslint": "^7.18.0",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "user-event": "^4.0.0"
   }
 }

@@ -1,20 +1,14 @@
-import React from "react"
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import Theme from "styles/Theme";
+import Button from "./core/commons/Button";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
-}
+    <ThemeProvider theme={Theme}>
+      <Button>Teste</Button>
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
