@@ -1,13 +1,18 @@
 import React from "react";
+import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 import Theme from "styles/Theme";
-import Button from "./core/commons/Button";
+import Home from "pages/Home";
 
 const App = () => {
   return (
-    <ThemeProvider theme={Theme}>
-      <Button>Button Label</Button>
-    </ThemeProvider>
+    <RecoilRoot>
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <ThemeProvider theme={Theme}>
+          <Home />
+        </ThemeProvider>
+      </React.Suspense>
+    </RecoilRoot>
   );
 };
 

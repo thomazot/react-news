@@ -1,35 +1,26 @@
 import React from "react";
-import Heading from "core/commons/Heading";
-import Subtitle from "core/commons/Subtitle";
-import Paragraph from "core/commons/Paragraph";
-import Shape from "core/commons/Shape";
-import styled from "styled-components";
+import IArticle from "typings/IArticle";
+import * as css from "./Card.style";
 
 export type ICard = {
-  heading: string;
-  subtitle: string;
-  description: string;
+  article: IArticle;
+  onActions?: (article: IArticle) => void;
 };
 
-const CardHeading = styled(Heading)`
-  margin-bottom: ${({ theme }) => theme.global.SpacingStack.xxxs};
-`;
+const Card = ({ article, onActions }: ICard) => {
+  const handleActions = () => {
+    if (typeof onActions === "function") {
+      onActions(article);
+    }
+  };
 
-const CardSubtitle = styled(Subtitle)`
-  margin-bottom: ${({ theme }) => theme.global.SpacingStack.xxs};
-`;
-
-const CardParagraph = styled(Paragraph)`
-  margin-bottom: ${({ theme }) => theme.global.SpacingStack.sm};
-`;
-
-const Card = ({ heading, subtitle, description }: ICard) => {
   return (
-    <Shape>
-      <CardHeading>{heading}</CardHeading>
-      <CardSubtitle>{subtitle}</CardSubtitle>
-      <CardParagraph>{description}</CardParagraph>
-    </Shape>
+    <css.CardShape>
+      <css.CardHeading>{article.title}</css.CardHeading>
+      <css.CardSubtitle>{article.description}</css.CardSubtitle>
+      <css.CardParagraph>{article.content}</css.CardParagraph>
+      <css.CardButton onClick={handleActions}>Ver mais</css.CardButton>
+    </css.CardShape>
   );
 };
 

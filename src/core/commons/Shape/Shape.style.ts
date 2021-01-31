@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Shape = styled.article`
+  border-style: solid;
   border-radius: ${({ theme }) => theme.global.BorderRadius.none};
   padding: ${({ theme }) => theme.global.SpacingInset.lg};
   border-width: ${({ theme }) => theme.global.BorderWidth.thin};

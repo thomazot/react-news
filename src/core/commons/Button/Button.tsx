@@ -6,6 +6,7 @@ export interface IButton {
   type?: "primary";
   children?: React.ReactChild | React.ReactChild[];
   className?: string;
+  onClick?: () => void;
 }
 
 const Button = ({
@@ -13,11 +14,13 @@ const Button = ({
   type = "primary",
   children,
   className,
+  onClick,
 }: IButton) => {
   const [pressed, setPressed] = useState(false);
 
   return (
     <css.Button
+      onClick={onClick}
       className={className}
       type={buttonType}
       primary={type === "primary"}

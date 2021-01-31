@@ -13,5 +13,6 @@ export type ISubtitle = {
 };
 
 export const Subtitle = styled.h3<ISubtitle>`
+  margin: 0;
   ${({ size }) => size === "small" && SubtitleSmall}
 `;
