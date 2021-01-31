@@ -20,11 +20,11 @@ describe("<Heading /> @core/commons/Heading", () => {
     const title = screen.getByRole("heading", { name: /heading sm/i });
 
     expect(title).toHaveStyle({
-      "font-family": Theme.brand.FontFamily.highlight,
-      // fontSize: Theme.global.FontSize.lg,
-      // lineHeight: Theme.global.LineHeight.distant,
-      // fontWeight: Theme.brand.FontWeight.bold,
-      // color: Theme.brand.Color.neutral[0],
+      fontFamily: Theme.brand.FontFamily.highlight,
+      fontSize: Theme.global.FontSize.lg,
+      lineHeight: Theme.global.LineHeight.distant,
+      fontWeight: Theme.brand.FontWeight.bold,
+      color: Theme.brand.Color.neutral[0],
     });
   });
 });
