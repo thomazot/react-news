@@ -14,13 +14,14 @@ const Home = () => {
 
   return (
     <css.Grid>
-      {news.articles.map((article, index) => (
-        <Card
-          key={`${index}-${article.source.id}`}
-          article={article}
-          onActions={handleAction}
-        />
-      ))}
+      {news &&
+        news.articles.map((article, index) => (
+          <Card
+            key={`${index}-${article.source.id}`}
+            article={article}
+            onActions={handleAction}
+          />
+        ))}
     </css.Grid>
   );
 };
