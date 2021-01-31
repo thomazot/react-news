@@ -13,5 +13,6 @@ export type IHeading = {
 };
 
 export const Heading = styled.h1<IHeading>`
+  margin: 0;
   ${({ size }) => size === "small" && HeadingSmall}
 `;

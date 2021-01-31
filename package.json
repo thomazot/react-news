@@ -7,6 +7,7 @@
     "collectCoverageFrom": [
       "!src/**/index.{ts,tsx}",
       "!src/tokens/**/*",
+      "!src/typings/**/*",
       "!src/react-app-env.d.ts",
       "!src/styled.d.ts"
     ]
@@ -15,6 +16,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "recoil": "^0.1.2",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
     "typescript": "^4.0.3",
