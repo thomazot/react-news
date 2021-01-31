@@ -6,7 +6,7 @@ import Button from "./core/commons/Button";
 const App = () => {
   return (
     <ThemeProvider theme={Theme}>
-      <Button>Teste</Button>
+      <Button>Button Label</Button>
     </ThemeProvider>
   );
 };

@@ -1,6 +1,6 @@
 const Brand = {
   FontFamily: {
-    highlight: "Archivo",
+    highlight: "'Archivo',sans-serif",
   },
   FontWeight: {
     bold: "700",
