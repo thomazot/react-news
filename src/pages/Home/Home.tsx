@@ -14,9 +14,9 @@ const Home = () => {
 
   return (
     <css.Grid>
-      {news.articles.map((article) => (
+      {news.articles.map((article, index) => (
         <Card
-          key={`${article.source.name}-${article.source.id}`}
+          key={`${index}-${article.source.id}`}
           article={article}
           onActions={handleAction}
         />
