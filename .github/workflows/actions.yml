@@ -47,9 +47,7 @@ jobs:
 
     - name: Build
       run: yarn build
-      env:
-        REACT_APP_GNEWS: ${{ secrets.REACT_APP_GNEWS }}
-
+        
     - name: Deploy
       run: |
         git config --global user.name $user_name
@@ -57,6 +55,7 @@ jobs:
         git remote set-url origin https://${github_token}@github.com/${repository}
         yarn deploy
       env:
+        REACT_APP_GNEWS: ${{ secrets.REACT_APP_GNEWS }}
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
