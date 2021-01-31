@@ -10,7 +10,7 @@ import Button from "./";
 import { ThemeProvider } from "styled-components";
 import Theme from "styles/Theme";
 
-describe("<Button /> @libs/commons/button", () => {
+describe("<Button /> @core/commons/button", () => {
   it("Should render component", () => {
     const { container } = createComponent();
     expect(container).toBeInTheDocument();
@@ -25,7 +25,7 @@ describe("<Button /> @libs/commons/button", () => {
     const button = screen.getByRole("button", { name: /confirm/i });
     expect(button.getAttribute("data-color")).toBe("primary");
   });
-  it("Should button style equal with defined", async () => {
+  it("Should button style equal with defined", () => {
     createComponent("confirm");
 
     const button = screen.getByRole("button", { name: /confirm/i });

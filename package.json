@@ -6,11 +6,9 @@
   "jest": {
     "collectCoverageFrom": [
       "!src/**/index.{ts,tsx}",
-      "!src/**/*.{style,styl}.{ts,tsx}",
-      "!src/styles/**/*",
-      "!src/typings/**/*",
       "!src/tokens/**/*",
-      "!src/react-app-env.d.ts"
+      "!src/react-app-env.d.ts",
+      "!src/styled.d.ts"
     ]
   },
   "dependencies": {
