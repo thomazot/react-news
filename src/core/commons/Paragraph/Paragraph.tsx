@@ -3,10 +3,11 @@ import * as css from "./Paragraph.style";
 
 export type IParagraph = {
   children?: React.ReactChild | React.ReactChild[];
+  className?: string;
 };
 
-const Paragraph = ({ children }: IParagraph) => {
-  return <css.Paragraph>{children}</css.Paragraph>;
+const Paragraph = ({ className, children }: IParagraph) => {
+  return <css.Paragraph className={className}>{children}</css.Paragraph>;
 };
 
 export default Paragraph;

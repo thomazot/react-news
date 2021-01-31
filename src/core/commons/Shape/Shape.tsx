@@ -3,11 +3,12 @@ import * as css from "./Shape.style";
 
 export type IShape = {
   children?: React.ReactChild | React.ReactChild[];
+  className?: string;
 };
 
-const Shape = ({ children }: IShape) => {
+const Shape = ({ className, children }: IShape) => {
   return (
-    <css.Shape data-testid="article" role="article">
+    <css.Shape className={className} data-testid="article" role="article">
       {children}
     </css.Shape>
   );
