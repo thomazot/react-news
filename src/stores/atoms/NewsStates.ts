@@ -2,7 +2,7 @@ import { atom } from "recoil";
 import INews from "typings/INews";
 
 const URL =
-  "http://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=";
+  "https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=";
 
 const NewsStates = atom<INews>({
   key: "@NEWS_STATES",
