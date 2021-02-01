@@ -42,3 +42,11 @@ Para testar a apalicação deve baixar instalar as dependencias e executar.
   #executar o coverage
   yarn coverage
 ```
+
+Obs.: Para que funcione precisa criar um arquivo com as variavel de ambiente ".env" com o conteudo:
+
+```
+REACT_APP_GNEWS=[tokem]
+```
+
+Link para gerar o token [aqui](https://newsapi.org/).
