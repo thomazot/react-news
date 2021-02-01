@@ -26,8 +26,8 @@ Podemos utilizar também tests unitários para uma segurança maior na hora de s
 
 ## Exemplo no Github Pages
 
-Subi a aplicação no github pages mas o plan do googlenews é de desenvolvedor e não funciona em ambiente de produção.
-Para testar a apalicação deve baixar instalar as dependencias e executar.
+Subi a aplicação no github pages mas o plano do googlenews é de desenvolvedor e não funciona em ambiente de produção.
+Para testar a aplicação deve baixar instalar as dependencias e executar.
 
 ```
   #instalar as dependencias
