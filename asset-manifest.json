@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-news/static/js/main.25473641.chunk.js",
-    "main.js.map": "/react-news/static/js/main.25473641.chunk.js.map",
+    "main.js": "/react-news/static/js/main.9b0be176.chunk.js",
+    "main.js.map": "/react-news/static/js/main.9b0be176.chunk.js.map",
     "runtime-main.js": "/react-news/static/js/runtime-main.206fac45.js",
     "runtime-main.js.map": "/react-news/static/js/runtime-main.206fac45.js.map",
     "static/js/2.8af073e7.chunk.js": "/react-news/static/js/2.8af073e7.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.206fac45.js",
     "static/js/2.8af073e7.chunk.js",
-    "static/js/main.25473641.chunk.js"
+    "static/js/main.9b0be176.chunk.js"
   ]
 }
